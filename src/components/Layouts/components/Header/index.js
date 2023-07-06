@@ -2,13 +2,10 @@ import {
     faCircleXmark,
     faSpinner,
     faMagnifyingGlass,
-    faSignIn,
     faEllipsisVertical,
     faEarthAsia,
     faCircleQuestion,
     faKeyboard,
-    faCloudArrowUp,
-    faMessage,
     faUser,
     faCoins,
     faGear,
@@ -27,6 +24,8 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Button from '~/components/Button';
 import AccountItem from '~/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
+import { UploadIcon } from '~/components/Icons';
+import Image from '~/components/Image';
 // import 'tippy.js/dist/tippy.css';
 
 const cx = classNames.bind(styles);
@@ -130,7 +129,7 @@ function Header() {
                         <>
                             <Tippy delay={(0, 200)} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudArrowUp} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -142,7 +141,7 @@ function Header() {
                     )}
                     <Menu items={useCurrent ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {useCurrent ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 atl="Đào Lê Phương Hoa"
                                 src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/42a81079b5885e152707b170d63ba2df~c5_100x100.jpeg?x-expires=1688360400&x-signature=3HaWJR4f4vVDR0DTRv%2FiW9DPX1M%3D"
