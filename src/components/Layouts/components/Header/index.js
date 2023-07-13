@@ -13,6 +13,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import tippy from 'tippy.js/dist/tippy.css';
 import Tippy from '@tippyjs/react';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -21,7 +22,7 @@ import Menu from '~/components/Popper/Menu';
 import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
-// import 'tippy.js/dist/tippy.css';
+import routesConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -81,9 +82,9 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 {/* Logo Tiktok */}
-                <div className={cx('logo')}>
+                <Link to={routesConfig.home} className={cx('logo')}>
                     <img src={images.logo} alt="Tiktok" />
-                </div>
+                </Link>
                 {/* Input Search */}
                 <Search />
 
