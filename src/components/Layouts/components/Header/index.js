@@ -34,10 +34,12 @@ const MENU_ITEMS = [
             title: 'Language',
             data: [
                 {
+                    type: 'language',
                     code: 'en',
                     title: 'English',
                 },
                 {
+                    type: 'language',
                     code: 'vi',
                     title: 'Vietnamese',
                 },
