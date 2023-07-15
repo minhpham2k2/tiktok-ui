@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import axios from 'axios';
 
-import * as searchService from '~/utils/apiServices/searchService';
+import * as searchService from '~/utils/Services/searchService';
 import styles from './Search.module.scss';
 import AccountItem from '~/components/AccountItem';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
