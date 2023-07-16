@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Menu.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import MenuItem from './MenuItem';
-import HeaderMenu from './Header';
+import HeaderMenu from './HeaderMenu';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
