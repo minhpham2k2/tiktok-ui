@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { faCircleXmark, faL, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import HeadlessTippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
@@ -24,7 +24,7 @@ function Search() {
     const debounce = useDebounce(searchValue, 500);
 
     useEffect(() => {
-        if (!searchValue.trim()) {
+        if (!debounce.trim()) {
             setSearchResult([]);
             return;
         }

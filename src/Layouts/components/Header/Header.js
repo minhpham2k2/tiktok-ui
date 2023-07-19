@@ -1,3 +1,5 @@
+import classNames from 'classnames/bind';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faEllipsisVertical,
     faEarthAsia,
@@ -8,16 +10,15 @@ import {
     faGear,
     faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
-import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Tippy from '@tippyjs/react';
 import { Link } from 'react-router-dom';
+import 'tippy.js/dist/tippy.css';
+import Tippy from '@tippyjs/react';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
-import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons/Icons';
+import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons';
 import Image from '~/components/Image/Image';
 import Search from '../Search';
 import config from '~/config';
@@ -91,19 +92,20 @@ function Header() {
                 <div className={cx('actions')}>
                     {useCurrent ? (
                         <>
-                            <Tippy delay={(0, 200)} content="Upload video" placement="bottom">
+                            <Tippy delay={(0, 50)} content="Upload video" placement="bottom">
                                 <button className={cx('action-btn')}>
                                     <UploadIcon />
                                 </button>
                             </Tippy>
-                            <Tippy delay={(0, 200)} content="Message" placement="bottom">
+                            <Tippy delay={(0, 50)} content="Message" placement="bottom">
                                 <button className={cx('action-btn')}>
                                     <MessageIcon />
                                 </button>
                             </Tippy>
-                            <Tippy delay={(0, 200)} content="Inbox" placement="bottom">
+                            <Tippy delay={(0, 50)} content="Inbox" placement="bottom">
                                 <button className={cx('action-btn')}>
                                     <InboxIcon />
+                                    <span className={cx('badge')}>12</span>
                                 </button>
                             </Tippy>
                         </>
