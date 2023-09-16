@@ -4,7 +4,7 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import { HeaderOnly } from '~/Layouts';
 import Search from '~/pages/Search';
-import Live from '~/pages/Live';
+import Live from '~/pages/Live/Live';
 import config from '~/config';
 // Public Routes
 const publicRoutes = [

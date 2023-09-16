@@ -1,0 +1,140 @@
+.wrapper {
+    display: flex;
+    padding: 20px 0;
+    width: 692px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(221, 215, 215);
+    margin: 0 auto;
+}
+
+.image {
+    height: 56px;
+    width: 56px;
+}
+.avatar {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.container {
+    margin-left: 12px;
+    flex: 1;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.author {
+    display: flex;
+    height: 28px;
+    align-items: center;
+}
+.nickname {
+    font-size: 1.8rem;
+    line-height: 24px;
+    margin-right: 4px;
+    font-weight: 700;
+}
+.fullname {
+    font-size: 1.4rem;
+    line-height: 28px;
+    font-weight: 400;
+}
+.content {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.03px;
+    word-break: break-word;
+    width: 100%;
+}
+.title {
+    font-weight: 400;
+}
+.caption {
+    color: rgb(43, 93, 185);
+    font-weight: 600;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.music-text {
+    margin-left: 4px;
+}
+.following {
+    padding: 1px 15px;
+    min-height: 36px;
+    min-width: 96px;
+}
+.follow {
+    padding: 1px 15px;
+    min-height: 36px;
+    min-width: 96px;
+}
+.body {
+    display: flex;
+    align-items: flex-end;
+}
+.video {
+    margin-right: 20px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.video-tag {
+    border-radius: 8px;
+    min-height: 315px;
+    min-width: 328px;
+    max-height: 585px;
+    max-width: 555px;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 100%;
+}
+.btn {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    height: 78px;
+    cursor: pointer;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 200ms;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    color: rgb(22, 24, 35);
+    margin: 8px 0 6px;
+}
+
+.liked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 200ms;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 50%;
+    color: var(--primary);
+    margin: 8px 0 6px;
+}
